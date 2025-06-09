@@ -1,7 +1,12 @@
 import "./App.css";
+import { MemoryCardGame } from "@/components";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <MemoryCardGame />
+    </>
+  );
 }
 
 export default App;

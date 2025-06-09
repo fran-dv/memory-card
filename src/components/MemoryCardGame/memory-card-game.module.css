@@ -1,0 +1,43 @@
+.cardsContainer {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gameInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.headings {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.scoresContainer {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  align-self: stretch;
+  gap: 1rem;
+  padding: 1rem;
+  border: 2px dashed var(--accent-2-color);
+}
+
+.scoresContainer h2,
+.scoresContainer h3 {
+  text-align: center;
+}
+
+.scoresContainer h2 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
