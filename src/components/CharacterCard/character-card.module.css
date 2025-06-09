@@ -1,0 +1,36 @@
+.card {
+  --border-radius: 1.5rem;
+  background-color: var(--accent-1-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 250px;
+  flex-grow: none;
+  border-radius: var(--border-radius);
+  transition: transform 0.1s ease-in-out;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.cardImage {
+  width: 100%;
+  padding-top: 20rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+.cardTitle {
+  width: 100%;
+  color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
