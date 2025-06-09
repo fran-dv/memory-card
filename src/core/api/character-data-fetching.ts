@@ -13,7 +13,6 @@ const fetchCharacter = async (name: CharacterName): Promise<JSON | null> => {
 
 const fetchedDataToCharacter = (fetchedData: JSON): Character => {
   const data = JSON.parse(JSON.stringify(fetchedData));
-  console.log("data: ", data);
   return {
     name: data.query.pages[0].title,
     img: data.query.pages[0].original.source,
@@ -23,7 +22,6 @@ const fetchedDataToCharacter = (fetchedData: JSON): Character => {
 export const getCharacterData = async (
   name: CharacterName,
 ): Promise<Character | null> => {
-  console.log(name);
   const fetchedData = await fetchCharacter(name);
   if (!fetchedData) {
     console.error("there were problems fetching the data");
