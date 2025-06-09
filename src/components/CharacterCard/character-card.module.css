@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 250px;
+  min-width: 150px;
   flex-grow: none;
   border-radius: var(--border-radius);
   transition: transform 0.1s ease-in-out;
@@ -18,7 +18,7 @@
 
 .cardImage {
   width: 100%;
-  padding-top: 20rem;
+  padding-top: 12rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,5 +32,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.cardTitle h2 {
+  color: var(--bg-color);
+  font-size: 1rem;
 }
